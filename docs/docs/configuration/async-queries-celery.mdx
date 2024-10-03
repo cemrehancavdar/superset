@@ -22,7 +22,7 @@ Configuring Celery requires defining a `CELERY_CONFIG` in your `superset_config.
 and web server processes should have the same configuration.
 
 ```python
-class CeleryConfig(object):
+class CeleryConfig:
     broker_url = "redis://localhost:6379/0"
     imports = (
         "superset.sql_lab",
